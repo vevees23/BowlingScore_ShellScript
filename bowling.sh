@@ -1,4 +1,4 @@
-##!/usr/bin/ksh
+
 function readname
 { 
     trap "printf '\nYou cant escape with ctrl + c\n' " INT 
