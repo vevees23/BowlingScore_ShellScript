@@ -29,7 +29,7 @@ __Screenshots:__
 
 3.Now enter the name 
  **Conditions**
- _The name shouldn't contain any numbers, and space , and empty name _
+ - _The name shouldn't contain any numbers, and space , and empty name _
  
 ![Image of AShell start](res/3.png)
 
