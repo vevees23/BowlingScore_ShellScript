@@ -17,12 +17,14 @@ For ubuntu like operting systems , install banner using below command
 
 ``sudo apt-get install sysvbanner``
 
-#####Screenshots:
+####Screenshots:
 
 1.starting of the shell script 
+
 ![Image of Shell start](res/1.png)
 
 2.If you enter begingTheGame with out entering the name it will gives error message 
+
 ![Image of Shell start](res/1.png)
 
 3.Now enter the name 
@@ -45,7 +47,7 @@ For ubuntu like operting systems , install banner using below command
 	- shows error if you enter worng score 
 	- for strike you can enter 10 or X or x
 	- for spare you can enter /
-	- 
+
 ![Image of AShell start](res/7.png)
 
 ![Image of AShell start](res/8.png)
