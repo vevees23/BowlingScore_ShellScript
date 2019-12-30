@@ -6,7 +6,7 @@ function readname
     do
         echo "Enter the name with out space"
         read pname
-        if echo "$pname" | grep '[0-9]' > /dev/null
+        if echo "$pname" | grep '[0-9]' > /dev/null/null
         then
             clear
             echo "Invalid name, Number/s are not allowed in Name "
