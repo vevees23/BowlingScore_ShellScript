@@ -1,0 +1,231 @@
+/*
+Theme Name: WooCommerce Flat Theme
+Theme URI: http://example.com/woocommerce-flat-theme/
+Author: Jules
+Author URI: http://example.com
+Description: A professional, full-fledged WooCommerce theme with a clean flat design, featuring flat icons and flat buttons.
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 6.3
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: woocommerce-flat-theme
+Tags: woocommerce, flat-design, e-commerce, custom-colors, responsive-layout
+*/
+
+/* Reset & Base Typography */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333333;
+    background-color: #f4f7f6;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Header */
+.site-header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-branding h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navigation li {
+    margin-left: 20px;
+}
+
+.main-navigation a {
+    color: #34495e;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Flat Buttons */
+.btn-flat,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit {
+    display: inline-block;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px; /* Slight radius for modern flat look */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: none; /* Explicitly remove any default shadow */
+}
+
+.btn-flat:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+.btn-flat:active,
+button:active {
+    transform: scale(0.98); /* Press down effect */
+}
+
+/* Secondary Flat Button */
+.btn-secondary {
+    background-color: #e74c3c;
+}
+.btn-secondary:hover {
+    background-color: #c0392b;
+}
+
+/* Flat Icons styling (Assuming FontAwesome or similar is enqueued) */
+.flat-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 50%; /* Circle flat icon */
+    font-size: 24px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.flat-icon:hover {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    color: #bdc3c7;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.feature-box {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+    padding: 20px;
+}
+
+.feature-box h3 {
+    font-size: 20px;
+}
+
+.feature-box p {
+    color: #7f8c8d;
+}
+
+/* Main Content Area */
+.site-main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.site-footer a {
+    color: #3498db;
+}
+
+/* WooCommerce Overrides for Flat Look */
+.woocommerce ul.products li.product {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Very subtle shadow, keeping it mostly flat */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.woocommerce ul.products li.product:hover {
+    transform: translateY(-5px);
+}
+
+.woocommerce ul.products li.product .price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2em;
+}
